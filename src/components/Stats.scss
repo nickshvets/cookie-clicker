@@ -1,5 +1,15 @@
-.stats {
+.stats-container {
   background-color: greenyellow;
   padding: 5px;
   width: 750px;
+  display: flex;
+  flex-direction: column;
+  &__cookie-container {
+    display: flex;
+    flex-direction: row;
+  }
+  &__building-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
