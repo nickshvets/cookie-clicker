@@ -6,7 +6,7 @@ Cookie Clicker is a React application in which you can spend some fun time playi
 
 ## Demo
 
-![Video example](https://s13.gifyu.com/images/SCL2S.gif)
+![Video example](https://s13.gifyu.com/images/SCL2n.gif)
 
 ## Features
 
