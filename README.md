@@ -58,6 +58,6 @@ Distributed under the MIT License.
 
 ## Project Link:
 
-- [Mediatown](https://github.com/nickshvetsdev/cookie-clicker)
+- [Cookie Clicker](https://github.com/nickshvetsdev/cookie-clicker)
 
 ## _Thank you for checking this out!_
