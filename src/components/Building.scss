@@ -1,5 +1,60 @@
 .building {
   width: 200px;
   height: 200px;
-  margin: 3px;
+  margin: 1rem;
+  &:hover {
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+}
+
+.bakery-image {
+  background-image: url("../../public/bakery-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bakery-image-level-2 {
+  background-image: url("../../public/bakery-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bakery-image-level-3 {
+  background-image: url("../../public/bakery-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.upgrade-button {
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem;
+  margin: 0.3rem;
+  border: 2px solid gold;
+  color: gold;
+  font-weight: 800;
+  &:hover {
+    cursor: pointer;
+    background-color: gold;
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+  }
+}
+.remove-button {
+  background-color: white;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  border: 2px solid rgb(180, 0, 0);
+  color: rgb(180, 0, 0);
+  font-weight: 800;
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(180, 0, 0);
+    transition: 0.2s;
+    color: white;
+  }
 }

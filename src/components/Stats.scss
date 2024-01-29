@@ -1,15 +1,56 @@
 .stats-container {
-  background-color: greenyellow;
+  // background-color: greenyellow;
+  border: 3px solid gold;
   padding: 5px;
   width: 750px;
   display: flex;
   flex-direction: column;
+  background-image: url("../../public/shelves.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  .stats {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    background-color: rgba(104, 27, 0, 0.8);
+    color: white;
+    padding: 0.5rem;
+    font-weight: 600;
+    .cookie-count {
+      margin: 0.5rem;
+      color: #681b00;
+      justify-content: center;
+      align-items: center;
+      background-color: gold;
+      padding: 0.5rem;
+      border-radius: 50%;
+      height: 1rem; /* Fixed height in any appropriate unit */
+      width: 1rem; /* Fixed width in any appropriate unit */
+      display: flex; /* Change display to inline-block */
+    }
+    .bakery-count {
+      color: #681b00;
+      margin: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      background-color: gold;
+      padding: 0.5rem;
+      border-radius: 50%;
+      height: 1rem; /* Fixed height in any appropriate unit */
+      width: 1rem; /* Fixed width in any appropriate unit */
+      display: flex; /* Change display to inline-block */
+    }
+  }
+
   &__cookie-container {
     display: flex;
     flex-direction: row;
+    margin: 0.5rem;
   }
   &__building-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 }

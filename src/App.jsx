@@ -2,14 +2,14 @@ import { useReducer, useState, useEffect } from "react";
 import Stats from "./components/Stats";
 import Cookie from "./components/Cookie";
 import Building from "./components/Building";
+import { GiHouse } from "react-icons/gi";
+import { PiPlusCircleDuotone } from "react-icons/pi";
+import { GiUpgrade } from "react-icons/gi";
+
 import "./App.scss";
 
 const SquarePlusButton = ({ onClick }) => {
-  return (
-    <button className="square-button" onClick={onClick}>
-      <span className="plus-icon">+</span>
-    </button>
-  );
+  return <button className="square-button" onClick={onClick}></button>;
 };
 
 const reducer = (state, action) => {
@@ -57,7 +57,11 @@ function App() {
   };
 
   const upgradeItem = (building) => {
-    const upgradedBuilding = { ...building, upgraded: true };
+    const upgradedBuilding = {
+      ...building,
+      upgraded: true,
+      level: building.level + 1,
+    };
     dispatch({
       type: "UPDATE_ITEM",
       payload: { id: building.id, updatedItem: upgradedBuilding },

@@ -4,17 +4,168 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-image: url("../public/street.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .building-container {
-  // background-color: lightcyan;
   display: flex;
   flex-direction: row;
+  margin-bottom: 5rem;
 }
 
 .square-button {
   width: 100px;
   height: 100px;
-  border: 5px solid lightgreen;
+  border: 5px solid yellow;
   margin: 3px;
+  border-radius: 5px;
+  position: relative;
+  background-image: url("../public/bakery-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.square-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.55); /* Red overlay with 50% opacity */
+  pointer-events: none;
+  transition: background-color 0.3s; /* Smooth transition for the background color */
+}
+
+.square-button:hover::after {
+  background: rgba(
+    255,
+    223,
+    0,
+    0.5
+  ); /* Yellow overlay with 50% opacity on hover */
+}
+
+.square-button:hover {
+  width: 120px;
+  height: 120px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.plus-duotone-icon {
+  color: gold;
+}
+
+.chimney {
+  width: 25px;
+  height: 30px;
+  background-color: brown;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); // for a 3D effect
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 12px 12px; // brick size
+
+  .smoke {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    animation: smokeEffect 2s infinite; // medium size, slow animation
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: gray;
+      border-radius: 50%;
+    }
+
+    &::before {
+      // Small smoke effect
+      width: 10px;
+      height: 10px;
+      animation: smokeEffect 1s infinite; // faster animation
+    }
+
+    &::after {
+      // Large smoke effect
+      width: 30px;
+      height: 30px;
+      animation: smokeEffect 1s infinite; // slowest animation
+    }
+  }
+}
+
+@keyframes smokeEffect {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-80px) scale(2);
+    opacity: 0;
+  }
+}
+
+.triangle-container {
+  top: -4.5rem;
+  position: absolute;
+  left: 50%;
+  width: 230px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  overflow: hidden;
+  animation: tremble 0.5s infinite alternate;
+
+  /* Set your image as a background */
+  background-image: url("../public/roof-pattern.png");
+  background-size: cover; /* This will ensure the image covers the full area. You can also use 'contain' based on your requirement */
+  background-position: center; /* This centers the background image */
+
+  /* Apply clip-path to the container itself */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.triangle-image {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.triangle {
+  top: -4.5rem;
+  left: 50%; // Center horizontally
+  position: absolute;
+  border-left: 120px solid transparent; // half the width of the square
+  border-right: 120px solid transparent; // half the width of the square
+  border-bottom: 70px solid #d83800; // base color of the triangle
+  transform: translateX(-50%) translateY(0) rotate(0deg);
+  animation: tremble 0.5s infinite alternate;
+
+  background-size: 22px 22px; // Adjust the size of the tiles
+
+  @keyframes tremble {
+    0% {
+      transform: translateX(-50%) translateY(0) rotate(-5deg);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-5px) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(0) rotate(5deg);
+    }
+  }
 }

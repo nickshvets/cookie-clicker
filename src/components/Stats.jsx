@@ -7,15 +7,27 @@ export default function Stats({ cookieCount, buildingState }) {
   return (
     <div className="stats-container">
       <div className="stats-container__cookie-container">
-        <div className="stats">You have {cookieCount} cookies!!!</div>
-        <img
-          style={{ height: "20px", animation: "rotation 1s infinite linear" }}
-          src={cookie}
-          alt="Cookie"
-        />
+        <div className="stats">
+          You have <span className="cookie-count">{cookieCount}</span> cookies
+          !!!
+          <img
+            style={{ height: "20px", animation: "rotation 1s infinite linear" }}
+            src={cookie}
+            alt="Cookie"
+          />
+        </div>
       </div>
-      <div className="stats-container__building-container">
-        You have {buildingState.buildings.length} bakeries!!!
+      <div className="stats-container__cookie-container">
+        <div className="stats">
+          You have{" "}
+          <span className="bakery-count">{buildingState.buildings.length}</span>{" "}
+          bakeries !!!
+          <img
+            style={{ height: "20px", animation: "rotation 1s infinite linear" }}
+            src={cookie}
+            alt="Cookie"
+          />
+        </div>
       </div>
     </div>
   );

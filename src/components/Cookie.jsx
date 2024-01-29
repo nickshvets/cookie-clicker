@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import cookie from "./cookie.png";
+import cookie from "./cookie2.png";
 import "./Cookie.scss";
 
 const Cookie = ({ handleClick }) => {
@@ -24,7 +24,7 @@ const Cookie = ({ handleClick }) => {
     <img
       className="cookie"
       style={{
-        border: premiumCookie ? "10px solid gold" : "10px solid pink",
+        border: premiumCookie ? "10px solid gold" : "10px solid #681b00",
       }}
       src={cookie}
       alt="Cookie"
