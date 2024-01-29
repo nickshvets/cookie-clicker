@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# README for Cookie Clicker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## _Fun game_
 
-## Available Scripts
+Cookie Clicker is a React application in which you can spend some fun time playing a simple game of cookie production.
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+![Video example](https://s13.gifyu.com/images/SCL2S.gif)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Click on the main spinning cookie!
+- Create factories
+- Upgrade factories
+- Remove factories
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the project
 
-### `npm run build`
+`git clone git@github.com:nickshvetsdev/cookie-clicker.git`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install all the necessary packages
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Navigate to the `/cookie-clicker` folder:
 
-### `npm run eject`
+`cd cookie-clicker`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the app :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application game allows you to be your own baker:
 
-## Learn More
+- Click on the main spinning cookie to add add new cookies!
+- Create factories to boost cookie production
+- Upgrade factories to speed up the cookie production per factory
+- Remove factories - if you deem that necessary
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://react.dev/) - The web framework used
+- [React Hooks](https://legacy.reactjs.org/docs/hooks-intro.html) - State management, interaction
+- [SASS](https://sass-lang.com/) - For styling
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Distributed under the MIT License.
 
-### Analyzing the Bundle Size
+## Contact:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Nick Shvets](https://www.linkedin.com/in/nick-shvets-204434a8/)
 
-### Making a Progressive Web App
+## Project Link:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Mediatown](https://github.com/nickshvetsdev/cookie-clicker)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## _Thank you for checking this out!_
