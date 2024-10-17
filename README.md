@@ -52,10 +52,6 @@ Built With
 
 Distributed under the MIT License.
 
-## Contact:
-
-- [Nick Shvets](https://www.linkedin.com/in/nick-shvets-204434a8/)
-
 ## Project Link:
 
 - [Cookie Clicker](https://github.com/nickshvetsdev/cookie-clicker)
